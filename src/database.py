@@ -46,5 +46,6 @@ def outputStudents(db_cursor):
 def closeDB(db_connect, db_cursor):
     db_connect.commit()
     db_cursor.close()
+    db_connect.close()
 
 
